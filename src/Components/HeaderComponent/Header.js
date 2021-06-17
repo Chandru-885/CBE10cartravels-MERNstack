@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../App.css'
 import {Button} from 'react-bootstrap' 
 import {Link} from "react-router-dom";
+import logo from "../Assets/logo.JPG"
 
 export default class Header extends Component {
     constructor(){
@@ -24,12 +25,19 @@ export default class Header extends Component {
     }
 
     render() {
+        var message1 = (
+            <div class="alert alert-info mb-0" role="alert">
+               <p>This site is designed for practice purpose. Try user signin/login & Try adminlogin also</p>
+               <p>For user: user@gmail.com password:user1234</p>
+               <p>For admin: admin@gmail.com password:admin1234</p>
+            </div>
+        )
         return (
             <div className="MainDiv">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <Link to={'/'} className="linkcolor">
               <div className="navbar-brand">
-                    <img alt="logo" src="https://yt3.ggpht.com/a/AATXAJyxJPOgMaAd69NNjLLzYBhyJmNT8PpQb3M4YS7jrA=s176-c-k-c0xffffffff-no-rj-mo" className="d-inline-block logoimg align-top"/>
+                    <img alt="logo" src={logo} className="d-inline-block logoimg align-top"/>
                     <span className="cartarvels">Car Travels</span>
               </div>
               </Link>
@@ -49,17 +57,9 @@ export default class Header extends Component {
                 </div>
 
                 </nav>
+                {message1}
             </div>
         )
     }
 }
 
-
-
-{/* <Nav.Item className="ml-auto">
-                    
-                    <Button variant="outline-primary" className="m-2" ><Link to={'/localnewbooking'} className="linkcolor">Local Package</Link></Button>
-                    <Button variant="outline-warning" className="m-2" ><Link to={'/tourpackagelist'} className="linkcolor">Tour Package</Link></Button>
-                    <Button variant="outline-info" className="m-2"><Link to={'/signup'} className="linkcolor">Sign Up </Link></Button>
-                    <Button variant="outline-info" className="m-2"><Link to={'/login'} className="linkcolor">Log In </Link></Button>
-                </Nav.Item> */}

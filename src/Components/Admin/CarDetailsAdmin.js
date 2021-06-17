@@ -52,7 +52,7 @@ export default class CarDetailsAdmin extends Component {
                     <Link to={'updatecarkmdetail/'+Car_km_Detail.vechicleid}>
                         <Button variant="outline-primary" className="m-2"> Edit </Button>
                     </Link>
-                    <Button variant="outline-danger" className="m-2" onClick={this.deleteCar_km_Detail.bind(this,Car_km_Detail.vechicleid)}>Delete</Button>
+                    <Button variant="outline-danger" className="m-2" onClick={this.deleteCar_km_Detail.bind(this,Car_km_Detail.vechicleid)} disabled={true}>Delete</Button>
                 </td>
             </tr>
             );
@@ -85,9 +85,7 @@ export default class CarDetailsAdmin extends Component {
 
         <p className="carkm_ptag">Tollgate, Parking and Other Expenses will be Extra !</p>
         
-        <footer>
-            <p>&copy; 2021 done by Chandru</p>
-        </footer>
+
 
         </div>
         )
@@ -95,50 +93,3 @@ export default class CarDetailsAdmin extends Component {
     }
     
     
-    {/* <td><button type="button" onClick={this.deleteCar_km_Detail.bind(this, Car_km_Detail._id)} className="btn btn-danger m-1"> Delete </button> */}
-    {/* <button type="button" className="btn btn-warning m-1"> <Link to={'updateCarBookedData/' + Car_km_Detail.name}>Update</Link> </button> */}
-    {/* </td> */}
-    // 
-
-      {/* <div className="row">
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <img src={Carimg1}></img>
-            </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <img src={Carimg2} ></img>
-            </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <img src={Carimg3} ></img>
-            </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
-                <img src={Carimg4} ></img>
-            </div>
-        </div> */}
-
-          // search(e){
-        //     e.preventDefault();
-        //     this.setState({displayAll:false})
-        //     fetch('http://localhost:8010/api/v1/CarkilometerDetails/'+ this.searchinput.current.value,{
-        //         headers:authHeader()
-        //     })
-        //     .then(res=>res.json())
-        //     .then(data=>{
-        //         this.setState({searchList : data})
-        //     });   
-        // }
-     
-        // allbooking(e){
-        //     e.preventDefault();
-        //     this.searchinput.current.value="";
-        //     this.setState({displayAll:true});
-        // }
-     {/* <div className="bookinglist">
-                    <form class="form-inline">
-                    <h2>Local Package Booking List</h2>
-                    <div class="form-group ml-auto">
-                        <input type="text"  ref = {this.searchinput} className="form-control m-2 " id="inputsearch" placeholder="Search By User Id"/>
-                    </div>
-                    <button type="submit" className="btn btn-warning m-2" onClick={this.search.bind(this)}>Search</button>
-                    <button type="submit" className="btn btn-secondary m-2" onClick={this.allbooking.bind(this)}>All Bookings</button>
-                    </form>
-                </div> */}

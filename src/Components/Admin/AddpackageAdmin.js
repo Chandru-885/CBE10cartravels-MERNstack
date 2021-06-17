@@ -95,7 +95,7 @@ export default class AddpackageAdmin extends Component {
                                 <input ref={this.noofdays} type="text" class="form-control" id="inputnoofdays" placeholder="Enter Package Days" required/>
                             </div>
                         </div>
-                        <input type="submit" value="Add Package 🚗" className="btn btn-primary m-2"/>
+                        <input type="submit" value="Add Package 🚗" className="btn btn-primary m-2" disabled/>
                     </div>
                 </form>
                 </Container>

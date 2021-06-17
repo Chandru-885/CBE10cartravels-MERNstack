@@ -104,26 +104,3 @@ export default class AllLocalBooked extends Component {
     )
    }
 }
-
-
-{/* <td><button type="button" onClick={this.deletepreviousBooking.bind(this, previousBooking._id)} className="btn btn-danger m-1"> Delete </button> */}
-{/* <button type="button" className="btn btn-warning m-1"> <Link to={'updateCarBookedData/' + previousBooking.name}>Update</Link> </button> */}
-{/* </td> */}
-// deletepreviousBooking(id){
-//     fetch('http://localhost:8010/api/v1/carbookedusers/' + id, {
-//     headers:authHeader(),    
-//     method: 'DELETE' 
-//     })
-//     .then(res=>res.json())
-//     .then(data=>{
-//         console.log(data);
-//         this.setState({message: 'Record successfully deleted'})
-//             fetch('http://localhost:8010/api/v1/carbookedusers/',{
-//                 headers:authHeader()
-//             })
-//             .then(res=>res.json())
-//             .then(data=>{
-//                 this.setState({previousBookingList : data})
-//             });
-//     });
-// }

@@ -109,28 +109,3 @@ export default class AllTourBooked extends Component {
     }
 }
 
-
-
-{/* <td>
-<button type="button" onClick={this.deletepreviousBooking.bind(this, previousBooking.packagename)} className="btn btn-danger m-1"> Delete </button>
-<button type="button" className="btn btn-warning m-1"> <Link to={'updateCarBookedData/' + previousBooking.name}>Update</Link> </button>
-</td> */}
-
-// deletepreviousBooking(packagename){
-//     fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/cartourbookedusers/' + packagename, {
-//         headers:authHeader(),
-//         method: 'DELETE'
-//     })
-//     .then(res=>res.json())
-//     .then(data=>{
-//         console.log(data);
-//         this.setState({message: 'Record successfully deleted'})
-//         fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/cartourbookedusers',{
-//             headers:authHeader()
-//         })
-//         .then(res=>res.json())
-//         .then(data=>{
-//             this.setState({tourpreviousBookingList: data})
-//         });
-//     });
-// }

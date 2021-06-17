@@ -103,21 +103,3 @@ export default class AllsignedUsers extends Component {
    }
 }
 
-    {/* <td>
-    <button type="button" onClick={this.deleteSignedUser.bind(this, SignedUser.emailid)} className="btn btn-danger m-1"> Delete </button> 
-    <button type="button" className="btn btn-warning m-1"> <Link to={'updateCarBookedData/' + SignedUser.name}>Update</Link> </button>
-    </td> */}
-
-    // deleteSignedUser(name){
-    //     fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/signedupuserdetails/' + this.state.SignedUsers.emailid, {method: 'DELETE' })
-    //     .then(res=>res.json())
-    //     .then(data=>{
-    //         console.log(data);
-    //         this.setState({message: 'Record successfully deleted'})
-    //         fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/signedupuserdetails')
-    //         .then(res=>res.json())
-    //         .then(data=>{
-    //             this.setState({SignedUsers: data})
-    //         });
-    //     });
-    // }

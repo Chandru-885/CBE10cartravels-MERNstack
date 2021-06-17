@@ -108,49 +108,10 @@ export default class Chart extends React.Component {
           }}
         />
         </Container>
-        <footer>
-            <p>&copy; 2021 done by Chandru</p>
-        </footer>
+
       </div>
     );
   }
 }
 
 
-// options={{
-//   title:{
-//     display:true,
-//     text:'Bookings by users',
-//     fontSize:1
-//   },
-//   legend:{
-//     display:true,
-//     position:'right'
-//   }
-// }}
-
-// const state = {
-//   labels: ['User01', 'sri'],
-//   datasets: [
-//     {
-//       label: 'LocalBookings',
-//       backgroundColor: 'rgb(193, 247, 242)',
-//       borderColor: 'rgba(15, 214, 196)',
-//       borderWidth: 2,
-//       borderRadius: 5,
-//       hoverBorderWidth : 3,
-//       hoverBorderColor : 'rgba(122, 196, 181)',
-//       data: [3,1,3,1,3,1,3]
-//     },
-//     {
-//     label: 'OutstationBookings',
-//     backgroundColor: 'rgb(255, 198, 158)',
-//     borderColor: 'rgba(237, 148, 85)',
-//     hoverBorderWidth : 3,
-//     hoverBorderColor : 'rgba(255, 156, 87)',
-//     borderWidth: 2,
-//     borderRadius: 5,
-//     data: [2,3,3,1,3,1,1]
-//     }
-//   ]
-// }

@@ -133,21 +133,8 @@ export default class Homepage extends Component {
                         </div>
                     </Carousel.Item>
                 </Carousel>
-                <footer>
-                    <p>&copy; 2021 done by Chandru</p>
-                </footer>
 
             </div>
         )
     }
 }
-
-    {/* <Row>
-                    <div className="col col-sm-12 col-md-8 col-xs-6">
-                        <img src={car1} alt="car"></img> 
-                     </div>   
-                     <div className="col col-sm-12  col-md-4 col-xs-6">
-                        <span> LOG IN <br></br> SELECT PACKAGE <br></br> TRAVEL</span>
-                    </div>
-            </Row> */}
-              

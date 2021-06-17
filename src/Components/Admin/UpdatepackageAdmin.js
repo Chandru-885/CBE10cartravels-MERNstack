@@ -105,7 +105,7 @@ export default class UpdatepackageAdmin extends Component {
                                 <input ref={this.noofdays} type="text" class="form-control" id="inputnoofdays" placeholder="Enter Package Days" required/>
                             </div>
                         </div>
-                        <button type="submit" onClick={this.UpdatePackageDetail.bind(this)} className="btn btn-success">Update Detail 🚗</button>
+                        <button type="submit" onClick={this.UpdatePackageDetail.bind(this)} className="btn btn-success" disabled>Update Detail 🚗</button>
                     </div>
                 </form>
                 </Container>

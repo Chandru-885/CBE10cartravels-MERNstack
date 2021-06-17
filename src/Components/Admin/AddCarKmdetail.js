@@ -88,7 +88,7 @@ export default class AddCarKmdetail extends Component {
                                 <input ref={this.amount} type="number" class="form-control" id="amount" placeholder="Enter Amount" required/>
                             </div>
                         </div>
-                        <input type="submit" value="Add New Detail 🚗" className="btn btn-primary m-2"/>
+                        <input type="submit" value="Add New Detail 🚗" className="btn btn-primary m-2" disabled/>
                     </div>
                 </form>
                 </Container>

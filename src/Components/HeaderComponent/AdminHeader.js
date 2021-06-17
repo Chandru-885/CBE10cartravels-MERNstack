@@ -4,6 +4,7 @@ import { Button} from 'react-bootstrap'
 import {Link} from "react-router-dom";
 import * as actions from '../action/auth-action';
 import {connect} from 'react-redux';
+import logo from "../Assets/logo.JPG"
 
 class AdminHeader extends Component {
     constructor(){
@@ -20,12 +21,18 @@ class AdminHeader extends Component {
     }
 
     render() {
+      var message1 = (
+        <div class="alert alert-info mb-0" role="alert">
+           <p>This site is designed for practice purpose. Add/ Delete/ update functionality is disabled. Try user signin/login</p>
+           <p>For user: user@gmail.com password:user1234</p>
+        </div>
+      )
         return (
             <div className="MainDiv">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
               <div className="navbar-brand">
                 <Link to={'/'} className="linkcolor">
-                    <img alt="logo" src="https://yt3.ggpht.com/a/AATXAJyxJPOgMaAd69NNjLLzYBhyJmNT8PpQb3M4YS7jrA=s176-c-k-c0xffffffff-no-rj-mo" className="d-inline-block align-top logoimg"/>
+                    <img alt="logo" src={logo} className="d-inline-block align-top logoimg"/>
                     {/* <span className="cartarvels">Car Travels</span> */}
                 </Link>
               </div>
@@ -50,6 +57,7 @@ class AdminHeader extends Component {
                     </ul>
                 </div>
                 </nav>
+                {message1}
             </div>
         )
     }

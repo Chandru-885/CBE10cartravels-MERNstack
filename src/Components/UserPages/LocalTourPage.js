@@ -178,53 +178,8 @@ export default class LocalTourPage extends Component {
         </div>
         <img src={kovai} width="100%" className="love-kovai"></img>
       
-        <footer>
-            <p>&copy; 2021 done by Chandru</p>
-        </footer>
    </div>
         )
     }
 }
 
-    // booknow(){
-    //     console.log("book now")
-    //     if(AuthService.findrole() === "user"){
-    //         console.log("true user")
-    //     }else if(AuthService.findrole() === "admin"){
-    //         alert("Admin can't Book tours")
-    //         this.props.history.push("/localnewbooking")
-    //     }else{
-    //         alert("Please Login to Book ! 😊")
-    //         this.props.history.push("/login")
-    //     }
-    // }
-
-    // addBooking(event){
-    //     event.preventDefault();
-    //     // console.log("before booknow function")
-    //     this.booknow();
-    //     // console.log("after booknow function")
-    //     console.log(this.state.username,this.state.phonenumber,this.state.fromlocation,this.state.tolocation);
-    //     if(this.state.usernameCheck === "form-control is-valid" && this.state.fromlocationCheck === "form-control is-valid" && this.state.phonenumberCheck === "form-control is-valid" && this.state.tolocationCheck === "form-control is-valid"){
-    //         var userid  =  AuthService.finduserid();
-    //         var usernameid = AuthService.findusername();
-    //         console.log("userid",userid); 
-
-    //         fetch('http://localhost:8010/api/v1/carbookedusers', {
-    //             method: 'POST',
-    //             headers: authHeader(),
-    //             body: JSON.stringify({user_name: this.state.username, phoneNumber: this.state.phonenumber, FromLocation : this.state.fromlocation, ToLocation : this.state.tolocation, user: userid, usernameid : usernameid}),
-    //         })
-    //         .then(res=>{
-    //             console.log(res);
-    //             if(res.status === 201){
-    //                 event.target.reset();
-    //                 this.props.history.push("/confirmbooking");
-    //             }else{
-    //                 alert(res.message)
-    //             }
-    //         })
-    //     }else{
-    //         alert("Please Enter All the fields Correctly!")
-    //     }  
-    // }

@@ -81,9 +81,28 @@ function App(props) {
 
 
       </Switch>
-      {/* <footer>
-          <p>&copy; 2021 done by Chandru</p>
-      </footer>  */}
+      <footer>
+              <div className="row m-3">
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-4 col-ls">
+                        <h5 className="mb-2">MERN Stack</h5>
+                        <p>FrontEnd : React, React-Bootstrap, React-Redux, Bootstrap, Css</p>
+                        <p>BackEnd : Express, Mongodb, Mongoose, Nodejs</p>
+                        <p>DataBase : Mongodb</p>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-4 col-ls">
+                        <h5  className="mb-2">Deployment</h5>
+                        <p>FrontEnd : Netlify </p>
+                        <p>BackEnd : Heroku</p>
+                        <p>DataBase : Mongodb Atlas</p>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-xl-4 col-ls">
+                        {/* <p>&copy; 2021 Developed by Chandru</p> */}
+                        <h5>2021 Developed by Chandru</h5>
+                        <p>Thanks @puneet #trainer</p>
+                    </div>
+                        
+                </div>
+        </footer>
     </Router>
   );
 }

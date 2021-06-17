@@ -12,9 +12,6 @@ export default class Thanks extends Component {
                 <p>We will contact you.</p>
                 <h2>Happy Journey</h2>
             </div>
-            <footer>
-                <p>&copy; 2021 done by Chandru</p>
-            </footer>
       </div>
 
         )

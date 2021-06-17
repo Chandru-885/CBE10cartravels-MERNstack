@@ -76,9 +76,6 @@ export default class CarDetails extends Component {
                 {GalleryList} 
             </div>
         
-        <footer>
-            <p>&copy; 2021 done by Chandru</p>
-        </footer>
 
         </div>
         )

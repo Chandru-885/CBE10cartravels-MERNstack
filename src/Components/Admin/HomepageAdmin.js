@@ -53,7 +53,7 @@ export default class HomepageAdmin extends Component {
                           <p className="card-text"><b>Price @ ₹{Gallerydata.packageprice}</b></p>
                       </Card.Text>
                       <Button variant="outline-primary" className="m-2"><Link to={'updatepackagedetail/' + Gallerydata.packagenameid}>Update</Link></Button>
-                        <Button variant="outline-danger" onClick={this.deletepackage.bind(this, Gallerydata.packagenameid)} className="m-2">Delete</Button>
+                        <Button variant="outline-danger" onClick={this.deletepackage.bind(this, Gallerydata.packagenameid)} className="m-2" disabled={true}>Delete</Button>
                    </Card.Body>
                 </Card>
              </div>
@@ -70,9 +70,7 @@ export default class HomepageAdmin extends Component {
                     </Row>
                 </Container>
 
-                <footer>
-                    <span>&copy; 2021 done by Chandru</span>
-                </footer>
+               
 
             </div>
         )

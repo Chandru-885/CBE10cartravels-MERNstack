@@ -59,16 +59,3 @@ export default class ConfirmBooking extends Component {
         )
     }
 }
-
-    // componentDidMount(){
-    //     var userid  =  AuthService.finduserid();
-    //     fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/carbookedusers/'+userid,{
-    //         headers:authHeader()
-    //     })
-    //     .then(res=>res.json())
-    //     .then(data=>{
-    //         console.log("carbookedusers",data)
-    //         this.setState({confirmbooking: data[data.length - 1]})
-    //         console.log(this.state.confirmbooking)
-    //     });
-    // }

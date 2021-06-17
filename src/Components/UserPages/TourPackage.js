@@ -131,7 +131,7 @@ export default class TourPackage extends Component {
                 <img class="d-block opacity-decide-1" width="100%" height="500px" src={tourcar2} alt="First slide"/>
                 <div class="img-data">
                    <h1>Safe Journey &<br></br>Happy Journery</h1>
-                   <p>Want to have a safe and happy Journey ?<br></br>Anot travels Welcomes you</p>
+                   <p>Want to have a safe and happy Journey ?<br></br>CBE10 travels Welcomes you</p>
                    <button>
                          Select Tour Package
                          <i class="far fa-hand-point-down icon-tour"></i>
@@ -163,33 +163,10 @@ export default class TourPackage extends Component {
                     </Row>  
 
                  </div> 
-            <footer>
-                <p>&copy; 2021 done by Chandru</p>
-            </footer> 
           </div>
         )
     }
 }
 
 
-    // addTourBookingDB(Gallerydata){
-    //     var userid  =  AuthService.finduserid();
-    //     fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/cartourbookedusers', {
-    //             method: 'POST',
-    //             headers: authHeader(),
-    //             body: JSON.stringify({packagename: Gallerydata.packagename, packageprice : Gallerydata.packageprice, carType : Gallerydata.carType, noofdays : Gallerydata.noofdays, user : userid}),
-    //         })
-    //         .then(res=>{
-    //             console.log(res.status);
-    //             if(res.status === 201){
-    //                 this.props.history.push("/tourconfirmbooking");
-    //             }
-    //         })  
-    // }
-
-
-{/* <Link to={'tourbeforeconfirmpage/' + Gallerydata._id}>
-        <Button variant="success" className="mt-3"> Book now</Button>
-</Link> */}
-{/* <Button variant="success"><Link to={'/loginpage'} className="linkcolor">Book now</Link></Button> */}
-        {/* <input type="text"  ref = {this.sortbydata} className="form-control m-2" id="inputsortdata" placeholder="Sort by price"/> */}
+    
