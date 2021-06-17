@@ -23,7 +23,7 @@ class AdminHeader extends Component {
     render() {
       var message1 = (
         <div class="alert alert-info mb-0" role="alert">
-           <p>This site is designed for practice purpose. Add/ Delete/ update functionality is disabled. Try user signin/login</p>
+           <p>CarTravels for a particular city(Eg: coimbatore). This site is designed for practice purpose. Add/ Delete/ update functionality is disabled. Try user signin/login</p>
            <p>For user: user@gmail.com password:user1234</p>
         </div>
       )

@@ -23,7 +23,7 @@ class UserHeader extends Component {
     render() {
       var message1 = (
         <div class="alert alert-info mb-0" role="alert">
-           <p>This site is designed for practice purpose.Try adminlogin also</p>
+           <p>CarTravels for a particular city(Eg: coimbatore). This site is designed for practice purpose.Try adminlogin also</p>
            <p>For admin: admin@gmail.com password:admin1234</p>
         </div>
       )
