@@ -63,13 +63,6 @@ export const userLogin = (user) => {
                             console.log(response);
                         })
                         dispatch(login(res.success));
-                        // this.props.history.push("/");
-                        // window.location.reload();
-                    // }else{
-                        // alert("Already Signed In ✔")
-                        // this.props.history.push("/");
-                        // window.location.reload();
-                    // }    
                 }else{
                     alert("Username/Password incorrect ❌\nor\nAfter Signup Please Login ☺")
                 }

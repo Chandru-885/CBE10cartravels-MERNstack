@@ -51,16 +51,19 @@ export default class AllsignedUsers extends Component {
             var FetchedData = "No Data Available !"
         }else{
             var FetchedData = display.map((SignedUser, i)=>{
-            return (
+            if(i!==0){
+                return (
+                
                     <tr key={i}>
                         <th scope="row">{i+1}</th>
                         <td>{SignedUser.username}</td>
                         <td>{SignedUser.emailid}</td>
                         <td>{SignedUser.phonenumber}</td>
                         <td>{SignedUser.signeddate}</td>
-
                     </tr>
                  );
+            }
+          
             })
         }
 
